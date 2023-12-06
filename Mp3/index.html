@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charSet="utf-8"/>
+<title>YouTube to MP3 Converter - Y2MP3</title>
+<meta name="description" content="Y2MP3 is a Free Online Youtube to MP3 Converter and Downloader">
+
+<link rel="alternate" hreflang="x-default" href="https://y2mp3.app/" />
+<link  rel="alternate" hreflang="en" href="https://y2mp3.app/" />
+<link  rel="alternate" hreflang="de" href="https://y2mp3.app/de" />
+<link  rel="alternate" hreflang="fr" href="https://y2mp3.app/fr" />
+<link  rel="alternate" hreflang="ja" href="https://y2mp3.app/ja" />
+<link  rel="alternate" hreflang="es" href="https://y2mp3.app/es" />
+
+<link rel="icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EE1B4TRG6T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EE1B4TRG6T');
+</script>
+<style>
+	:root {
+	  --main-bt-color: white;	
+	  --main-bg1-color: #0087cf;
+	  --main-bg2-color: #0176ca;
+	}
+</style>
+<link rel="stylesheet" type="text/css" href="/style/index.css?v=110802"/>
+<style>
+	body {
+		color: black;
+		background-color: #f1f5f7;
+	}
+	.nav h1{
+        font-size: 20px;
+        font-weight: 500;
+		text-decoration: none;
+	}
+	.nav span{
+		color: red;
+		margin: 0 1px 0 1px;
+	}
+</style>	
+</head>
+<body>
+<div class="head">
+	<div class="nav">
+		<div class="logo">
+			<a href="/"><h1>Y2MP3.APP</h1></a>
+		</div>
+		<div class="menu">
+			<a href="https://youtubemp4.cc" target='_blank'>YouTube to MP4</a>
+		</div>
+	</div>
+</div>
+<div id="main">
+		<h2>YouTube to MP3 Converter</h2>
+		<p>Convert and download Youtube video or music in MP3 for Free</p>
+	<div id="search-box">
+		<input id="search-input" type="text" name="url" placeholder="Paste Youtube video or music URL">
+		<input id="search-submit" type="submit" value="Start" onclick="return get_mp3()"><div id="loader"></div>
+	</div>
+	<p class='new-feature' @if="page='index'">Try out the <a href="/youtube-playlist-downloader">YouTube Playlist Downloader</a>, it support Convert Youtube Playlist to MP3.</p>
+	<div id="info"></div>
+	<div id="help">
+				
+		<h3 class="help-title">About Y2MP3 YouTube Converter</h3>
+		<p>Y2MP3 is a type of software or online tool that allows users to convert YouTube videos into audio files in the MP3 format. This technology has become increasingly popular as more and more people seek to listen to their favorite YouTube content offline, on the go, or in situations where video playback is not practical or desirable. With YouTube to MP3 converters, users can easily extract the audio from any YouTube video and save it to their device as an MP3 file. This process is typically quick and simple, requiring only the URL of the desired YouTube video and a few clicks to complete.</p>
+		<p>There are many different YouTube to MP3 converter tools available, ranging from free online options to paid software with advanced features. Some converters also allow users to customize the quality and bitrate of the resulting MP3 file, providing greater control over the listening experience. Overall, YouTube to MP3 technology provides a convenient and flexible way for users to enjoy their favorite YouTube content as audio files, making it an increasingly popular choice for music fans, podcast listeners, and other audio enthusiasts around the world.</p>		
+		<h3 class="help-title">Features of Y2MP3 YouTube Converter</h3>
+		<p class="help-title">Download playlists</p>
+		<p>Y2MP3 YouTube to MP3 Converter can download playlists when downloading audios from YouTube.</p>
+		<p class="help-title">Effortless and Efficient</p>
+		<p>Our YouTube video downloader provides a quick and effortless way to download any YouTube videos in MP4, MP3, WEBM, M4A, and other formats.</p>
+		<p class="help-title">Unrestricted Downloads from YouTube</p>
+		<p>With our tool, you can download and convert an infinite number of videos from YouTube.</p>
+		<p class="help-title">Safe and Secure</p>
+		<p>The quality and content of downloaded and converted files are preserved to be identical to that of the original content on YouTube, ensuring security and safety.</p>
+		<p class="help-title">Compatible with All Devices</p>
+		<p>Y2MP3.APP is a web-based YouTube video downloader that’s compatible with various platforms such as Windows, Mac, Linux, Android, and iPhone without the need for any software downloading or installation.</p>
+		<p class="help-title">Free of Charge</p>
+		<p>Our tool is completely free, and will always remain so. We would appreciate your support in sharing this tool with your friends. Thank you!</p>		
+		<h3 class="help-title">FAQs about Y2MP3 YouTube Converter</h3>
+		<p class="help-title">Q: Can I use Y2MP3 converter for free?</p>
+		<p>A: Yes, there are many free Y2MP3 converter tools available online. However, some may have limitations on the number of conversions or quality of output. Luckily, Y2MP3 has no limitations on the numbers of conversions.</p>
+		<p class="help-title">Q: Do I need to install software to use Y2MP3 converter?</p>
+		<p>A: No. Y2MP3 converter can be used online without any installation.</p>
+		<p class="help-title">Q: Can I download high-quality MP3 files using Y2MP3 converter?</p>
+		<p>A: Yes, Y2MP3 converter tool will download high-quality MP3 files automatically,.</p>
+		<p class="help-title">Q: Can I convert YouTube videos to other audio formats besides MP3?</p>
+		<p>A: Yes, some Y2MP3 converter also support conversion to other popular audio formats like WAV, AAC, and FLAC. But Y2MP3 can support audios with playlists. </p>
+		<p class="help-title">Q: Can I convert YouTube videos to MP3 files on my mobile device?</p>
+		<p>A: Yes, Y2MP3 converter apps available for both iOS and Android devices.</p>
+		<p class="help-title">Q: Is it possible to download entire playlists or channels from YouTube using a converter tool?</p>
+		<p>A: Yes, Y2MP3 converter tools offer the option to download entire playlists or channels in batch mode, making it easy to convert and save multiple videos at once.</p>	</div>
+</div>
+
+<footer class="copyright">
+	<a href="https://y2mate.xyz" target='_blank' title="Y2mate">Y2mate</a>
+	<a href="/terms-of-use" title="Terms of Use">Terms of Use</a>
+	<a href="/dmca" title="DMCA">DMCA</a>
+	<a href="/privacy-policy" title="Privacy Policy">Privacy Policy</a>
+	<a href="/legal-disclaimer" title="Legal Disclaimer">Legal Disclaimer</a>
+	<p>© 2023 Y2MP3.APP All Rights Reserved</p>
+</footer>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/script/index.js"></script>
+<!--<script src="/script/index.umd.js"></script>-->
+<body>
+</html>
